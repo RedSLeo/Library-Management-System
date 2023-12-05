@@ -8,3 +8,13 @@ The library Management System is a comprehensive project designed to streamline 
 
 - **Book Management:**
 	- Keep track of book detsils including title, ISBN, author, genre, total copies, and year published.
+
+- **Borrower Records:**
+	- Manage borrower information with fields for first name, last name, contact details, and address.
+
+- **Transaction History:**
+	- Record transactions, tracking book borrowings, returns, dates, and associated costs.
+
+## Requirements
+- SQL Server Management Studio
+- Python
