@@ -82,9 +82,9 @@ SELECT * FROM Transaction_History
 SELECT * FROM Book_Management
 
 -----------------------DELETE TABLES (Please be careful)
---DELETE Borrower_Records
---DELETE Transaction_History
---DELETE Book_Management
+DELETE Borrower_Records
+DELETE Transaction_History
+DELETE Book_Management
 
 ----------------------- STORE PROCEDURES
 CREATE PROCEDURE InsertBorrowerRecord
@@ -189,26 +189,26 @@ END;
 
 
 ------------------------DELETE Stored Procedures (Please be careful)
---CREATE PROCEDURE DeleteBorrowerRecord
---	@UserID INT
---AS
---BEGIN
---	DELETE FROM Borrower_Records
---	WHERE UsedID = @UserID;
---END;
+CREATE PROCEDURE DeleteBorrowerRecord
+	@UserID INT
+AS
+BEGIN
+	DELETE FROM Borrower_Records
+	WHERE UsedID = @UserID;
+END;
 
---CREATE PROCEDURE DeleteTransactionHistory
---	@TransactionID INT
---AS
---BEGIN
---	DELETE FROM Transaction_History
---	WHERE TransactionID = @TransactionID;
---END
+CREATE PROCEDURE DeleteTransactionHistory
+	@TransactionID INT
+AS
+BEGIN
+	DELETE FROM Transaction_History
+	WHERE TransactionID = @TransactionID;
+END
 
---CREATE PROCEDURE DeleteBookManagement
---	@BookID INT
---AS
---BEGIN
---	DELETE FROM Book_Management
---	WHERE BookID = @BookID;
---END;
+CREATE PROCEDURE DeleteBookManagement
+	@BookID INT
+AS
+BEGIN
+	DELETE FROM Book_Management
+	WHERE BookID = @BookID;
+END;
