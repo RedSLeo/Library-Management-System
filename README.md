@@ -5,14 +5,14 @@ The Library Management System document is designed to handle information such as
 
 ## Tables
 1. Borrower_Records
-- UserID (Primary Key): Unique identifier for each borrower.
-- FirstName: First name of the borrower.
-- LastName: Last name of the borrower.
-- ContactInfo: Contact information of the borrower.
-- Address: Address of the borrower.
+- UserID (Primary Key): Unique identifier for each customer.
+- FirstName: First name of the customer.
+- LastName: Last name of the customer.
+- ContactInfo: Contact information of the customer.
+- Address: Address of the customer.
   
 2. Transaction_History
-- TransactionID (Primary Key): Unique identifier for each transaction.
+- TransactionID (Primary Key): Unique identifier for each transaction with the customer and their book.
 - UserID (Foreign Key): References the UserID in Borrower_Records.
 - TransactionDate: Date of the transaction.
 - ReturnDate: Date when the borrowed item is expected to be returned.
@@ -63,4 +63,4 @@ Functionality:
 Inserts a new book record into the Book_Management table.
 
 ## Conclusion
-The database is structured to support the Library Management System efficiently. The tables capture essential information about borrowers, book transactions, and book details. The stored procedures provide a convenient way to interact with the database, allowing for the insertion of new records.
+The database seen here is what provides the most effective support for the Library Management System. The tables are used to keep track of who is borrowing the books, their transaction, and the specifics of the books being borrowed. By adding new entries from the database, stored procedures provide another means to interact with the database.
