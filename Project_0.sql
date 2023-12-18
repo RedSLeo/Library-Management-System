@@ -58,7 +58,6 @@ VALUES
 	(13, '2023-01-05', '2023-02-05', 21.00, 37),
 	(12, '2023-04-01', '2023-05-01', 16.75, 33),
 	(6, '2023-02-28', '2023-03-28', 23.25, 28);
-	-- Come back and edit it to have some usual customers / edit as needed after executing borrower_records
 
 -- Inserting data into Book_Management
 INSERT INTO Book_Management (BookTitle, ISBN, Author, Genre, TotalCopies, YearPublished)
