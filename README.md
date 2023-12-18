@@ -1,7 +1,7 @@
 # Library-Management-System
 
 ## Overview
-This document outlines the database design for a Library Management System. The system is designed to manage information related to borrowers, transaction history, and book management.
+The Library Management System document is designed to handle information such as Borrower_Records to record different users, Transaction_History to record transactions done with the customers, and Book_Management to handle what books are currently in the library. 
 
 ## Tables
 1. Borrower_Records
