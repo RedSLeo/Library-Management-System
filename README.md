@@ -12,50 +12,53 @@ This document outlines the database design for a Library Management System. The 
 - Address: Address of the borrower.
   
 2. Transaction_History
-TransactionID (Primary Key): Unique identifier for each transaction.
-UserID (Foreign Key): References the UserID in Borrower_Records.
-TransactionDate: Date of the transaction.
-ReturnDate: Date when the borrowed item is expected to be returned.
-Cost: Cost associated with the transaction.
-BookID (Foreign Key): References the BookID in Book_Management.
+- TransactionID (Primary Key): Unique identifier for each transaction.
+- UserID (Foreign Key): References the UserID in Borrower_Records.
+- TransactionDate: Date of the transaction.
+- ReturnDate: Date when the borrowed item is expected to be returned.
+- Cost: Cost associated with the transaction.
+- BookID (Foreign Key): References the BookID in Book_Management.
 
 4. Book_Management
-BookID (Primary Key): Unique identifier for each book.
-BookTitle: Title of the book.
-ISBN: International Standard Book Number.
-Author: Author of the book.
-Genre: Genre of the book.
-TotalCopies: Total copies available in the library.
-YearPublished: Year when the book was published.
+- BookID (Primary Key): Unique identifier for each book.
+- BookTitle: Title of the book.
+- ISBN: International Standard Book Number.
+- Author: Author of the book.
+- Genre: Genre of the book.
+- TotalCopies: Total copies available in the library.
+- YearPublished: Year when the book was published.
 
 ## Stored Procedures
 1. InsertBorrowerRecord
 Parameters:
-@FirstName (VARCHAR)
-@LastName (VARCHAR)
-@ContactInfo (VARCHAR)
-@Address (VARCHAR)
+- @FirstName (VARCHAR)
+- @LastName (VARCHAR)
+- @ContactInfo (VARCHAR)
+- @Address (VARCHAR)
+
 Functionality:
 Inserts a new borrower record into the Borrower_Records table.
 
 2. InsertTransactionHistory
 Parameters:
-@UserID (INT)
-@TransactionDate (DATETIME)
-@ReturnDate (DATETIME)
-@Cost (DECIMAL)
-@BookID (INT)
+- @UserID (INT)
+- @TransactionDate (DATETIME)
+- @ReturnDate (DATETIME)
+- @Cost (DECIMAL)
+- @BookID (INT)
+
 Functionality:
 Inserts a new transaction record into the Transaction_History table.
 
 3. InsertBookManagement
 Parameters:
-@BookTitle (VARCHAR)
-@ISBN (VARCHAR)
-@Author (VARCHAR)
-@Genre (VARCHAR)
-@TotalCopies (INT)
-@YearPublished (DATE)
+- @BookTitle (VARCHAR)
+- @ISBN (VARCHAR)
+- @Author (VARCHAR)
+- @Genre (VARCHAR)
+- @TotalCopies (INT)
+- @YearPublished (DATE)
+
 Functionality:
 Inserts a new book record into the Book_Management table.
 
