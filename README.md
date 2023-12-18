@@ -37,7 +37,7 @@ Parameters:
 - @Address (VARCHAR)
 
 Functionality:
-Inserts a new borrower record into the Borrower_Records table.
+Inserts a new customer record into the Borrower_Records table.
 
 2. InsertTransactionHistory
 Parameters:
